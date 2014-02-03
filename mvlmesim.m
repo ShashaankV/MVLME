@@ -2,10 +2,11 @@ clc
 clear
 figure(1)
 clf
+fprintf('The functions REMLEM, REMLEMtrans, FisherInv, and calccorr \n were originally written by Carson C Chow and edited by Shashaank Vattikuti.\n Both authors are from the Laboratory of Biological Modeling \n at the National Institutes of Health, NIDDK.\n\n')
 
 load('simdat1')
 Ntr=size(Y,2);
-m=500; %to save on computation, only analyze the first m subjects (~500 is the min for simdat1)
+m=2000; %to save on computation, only analyze the first m subjects (~500 is the min for simdat1)
 G=G(1:m,:);
 Y=zscore_sv(Y(1:m,:));
 [Z,A]=genZA(G,maf);
