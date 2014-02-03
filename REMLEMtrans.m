@@ -1,3 +1,4 @@
+%Originally written by Carson C Chow and edited by Shashaank Vattikuti. Both from the Laboratory of Biological Modeling at the National Institutes of Health, NIDDK.
 
 function [dLL,covg,cove]=REMLEM_trans(A,y,X,covg,cove)
 

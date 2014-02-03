@@ -1,3 +1,5 @@
+%Originally formulated by Carson C Chow and implemented by Shashaank Vattikuti. Both from the Laboratory of Biological Modeling at the National Institutes of Health, NIDDK.
+
 function [r,rse,rpval]=calccorr(tr1,tr2,eclass,Sigma,Finv,Finvmap)
     %grab relevant parameter estimates from Sigma
     v1=Sigma(tr1,tr1);
